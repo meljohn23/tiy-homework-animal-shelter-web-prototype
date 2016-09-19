@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Edit an Animal</title>
+    <link rel="stylesheet" href="css/Main.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Animal Shelter</h1>
+
+    <div class="two_columns">
+        <a href="AnimalShelterMain.html"> List Animals </a> | <a href="AddAnimal.html"> Add an Animal </a>
+    </div>
+
+    <h2 class="pageTitle">
+        Edit
+        an Animal</h2>
+    <h4><sup>*</sup>indicates a required field</h4>
+
+</header>
+
+<form action="/addOrEditPg" method="post">
+    <section>
+        <p>
+            <label>
+                Name<sup>*</sup>:
+            </label>
+        </p>
+        <textarea name="Animal Name"></textarea>
+        <p>
+            <label>
+                Animal Type<sup>*</sup>:
+            </label>
+        </p>
+        <select name = "typeId" id="">
+
+            <option value="">All Types</option>
+
+            <option value="1" >
+                bird
+            </option>
+
+            <option value="2" >
+                cat
+            </option>
+
+            <option value="3" >
+                dog
+            </option>
+
+            <option value="4" >
+                fish
+            </option>
+
+            <option value="5" >
+                reptile/exotic
+            </option>
+
+        </select>
+
+        <p>
+            <label>
+                Breed<sup>*</sup>:
+            </label>
+        </p>
+        <textarea name="Animal Breed"></textarea>
+        <p>
+            <label>
+                Description<sup>*</sup>:
+            </label>
+        </p>
+        <textarea name="Description"></textarea>
+        <br><br>
+        <p id="Add photo">Add Photo: </p>
+    </section>
+
+    </label>
+    </div>
+
+    <input for="browse" class="save" type="file">
+    <button id="save" name="button">Save Animal</button>
+
+</form>
+
+</body>
+
+</html>

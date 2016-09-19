@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Animal Shelter</title>
+    <link rel="stylesheet" href="css/Main.css">
+</head>
+
+<body class="content">
+
+<header>
+    <h1>Animal Shelter</h1>
+
+    <div class="two_columns">
+        <a href=""> List Animals </a> | <a href="AddAnimal.html"> Add an Animal </a>
+    </div>
+
+    <h2 class="pageTitle">List Animals</h2>
+    <h4>Search for an animal: </h4>
+
+</header>
+
+<form action="/" method="get">
+
+    <menu>
+        <input type="text" name="name" id="name" value="" placeholder="Name">
+
+        <select name="typeId">
+            <option value="">All Types</option>
+
+            <option value="1" >
+                bird
+            </option>
+
+            <option value="2" >
+                cat
+            </option>
+
+            <option value="3" >
+                dog
+            </option>
+
+            <option value="4" >
+                fish
+            </option>
+
+            <option value="5" >
+                reptile/exotic
+            </option>
+
+        </select>
+
+        <input type="text" name="id" id="id" value="" placeholder="Id">
+
+        <button name="button">Search</button>
+    </menu>
+
+</form>
+
+<section>
+
+    <div class="row">
+        <img src=http://data.whicdn.com/images/177087640/large.jpg>
+        <p>
+        <h2><a href="#">Bob</a></h2>
+        <strong>Type:</strong>dog
+        <br>
+        <strong>Breed:</strong> Chihuahua
+        <br>
+        <strong>Description:</strong> kinda full of himself
+        <br>
+        <strong>Notes:</strong> <a href="/delete?id=5"><img src="http://image.flaticon.com/icons/png/128/61/61391.png"
+                                                            style="width:25px; height: 25px;"></a>
+        </div>
+
+    <div class="row">
+        <img src=http://www.thatpetplace.com/208348.jpg>
+        <p>
+        <h2><a href="#">Wanda</a></h2>
+        <strong>Type:</strong>fish
+        <br>
+        <strong>Breed:</strong> clown fish
+        <br>
+        <strong>Description:</strong> Very beautiful. Really ought to be in pictures!
+        <br>
+        <strong>Notes:</strong> <a href="/delete?id=5"><img src="http://image.flaticon.com/icons/png/128/61/61391.png"
+                                                            style="width:25px; height: 25px;"></a>
+        </div>
+
+    <div class="row">
+        <img src=http://f.tqn.com/y/insects/1/W/g/K/-/-/103301194.jpg>
+        <p>
+        <h2><a href="#">Peter Parker</a></h2>
+        <strong>Type:</strong>reptile/exotic
+        <br>
+        <strong>Breed:</strong> tarantula
+        <br>
+        <strong>Description:</strong> Loves to climb the wall!
+        <br>
+        <strong>Notes:</strong> <a href="/delete?id=5"><img src="http://image.flaticon.com/icons/png/128/61/61391.png"
+                                                            style="width:25px; height: 25px;"></a>
+        </div>
+
+    <div class="row">
+        <img src=http://a4.mzstatic.com/us/r30/Purple6/v4/4f/68/81/4f68813f-bef8-762e-3781-68d0b291f44f/screen480x480.jpeg>
+        <p>
+        <h2><a href="#">Dick</a></h2>
+        <strong>Type:</strong>cat
+        <br>
+        <strong>Breed:</strong> Maine coon
+        <br>
+        <strong>Description:</strong> He's a cat, but other than that...he's okay.
+        <br>
+        <strong>Notes:</strong> <a href="/delete?id=5"><img src="http://image.flaticon.com/icons/png/128/61/61391.png"
+                                                            style="width:25px; height: 25px;"></a>
+        </div>
+
+
+</section>
+
+
+</body>
+</html>
+
+</html>
