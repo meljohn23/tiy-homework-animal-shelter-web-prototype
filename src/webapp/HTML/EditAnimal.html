@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Add an Animal</title>
-    <link rel="stylesheet" href="css/Main.css">
+    <title>Edit an Animal</title>
+    <link rel="stylesheet" href="../Main.css">
 </head>
 
 <body>
@@ -13,24 +13,21 @@
     <h1>Animal Shelter</h1>
 
     <div class="two_columns">
-        <a href="/"> List Animals </a> | <a href="EditAnimal.html"> Edit an Animal </a>
+        <a href="AnimalShelterMain.html"> List Animals </a> | <a href="AddAnimal.html"> Add New Animal </a>
     </div>
 
     <h2 class="pageTitle">
-        Add
+        Edit
         an Animal</h2>
     <h4><sup>*</sup>indicates a required field</h4>
 
 </header>
-
-<form action="AddAnimal.html" method="post">
     <section>
         <p>
             <label>
                 Name<sup>*</sup>:
             </label>
-        </p>
-        <textarea name="Animal Name"></textarea>
+        <textarea name="Animal Name">Bob</textarea>
         <p>
             <label>
                 Animal Type<sup>*</sup>:
@@ -38,7 +35,7 @@
         </p>
         <select name = "typeId" id="">
 
-            <option value="">All Types</option>
+            <option value="">Dog</option>
 
             <option value="1" >
                 bird
@@ -67,24 +64,30 @@
                 Breed<sup>*</sup>:
             </label>
         </p>
-        <textarea name="Animal Breed"></textarea>
+        <textarea name="Animal Breed">Chihuahua</textarea>
         <p>
             <label>
                 Description<sup>*</sup>:
             </label>
         </p>
-        <textarea name="Description"></textarea>
+        <textarea name="Description">kinda full of himself</textarea>
         <br><br>
-        <p id="Add photo">Add Photo: </p>
+        <p>
+            <label>
+                Current Photo<sup></sup>:
+            </label>
+        </p>
+        <p><img src="../images/large.jpg" style="width:140px;height:200px;">
+        </p>
+        <p id="Add photo">Upload More Photo(s): </p>
     </section>
 
-        </label>
-        </div>
+    </label>
+    </div>
 
-        <input for="browse" class="save" type="file">
-        <button id="save" name="button">Save Animal</button>
+    <input for="browse" class="save" type="file">
+    <button id="save" name="button">Save Animal</button>
 
-</form>
 
 </body>
 

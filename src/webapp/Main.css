@@ -7,8 +7,13 @@ html {
     height: 100%;
 }
 
+img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
 .row {
-    width: 400px;
+    width: 500px;
     padding: 10px 10px 10px 0;
     overflow: hidden;
 }
@@ -40,6 +45,8 @@ h1 {
     padding-top: 2%;
 }
 
+
+
 section {
     alignment: left;
 }
@@ -54,6 +61,14 @@ h2 {
     margin: 0;
 }
 
+textarea {
+    width: 100%;
+}
+
+section.note {
+    width: 100%;
+    align-content: flex-end;
+}
 input {
     line-height: 10px;
     border-color: darkblue;
@@ -129,4 +144,35 @@ button {
     width: 60px;
     height: 45px;
     box-shadow: 3px 3px 3px black;
+}
+
+table tr td:nth-child(2) {
+    width: 15%;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 0 1em 0 ;
+    width: 700px;
+}
+table tr td:first-child{
+    white-space: nowrap;
+}
+table tr th:nth-child(2){
+    width: 100%;
+}
+
+th{
+    background: darkgrey;
+}
+
+th, td{
+    margin: 0;
+    border: 1px solid black;
+    padding: 0.25em;
+    text-align: left;
 }
